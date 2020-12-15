@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>index on Website of Debajyoti Das</title>
-    <link>https://example.com/tags/index/</link>
+    <link>https://dedas111.github.io/tags/index/</link>
     <description>Recent content in index on Website of Debajyoti Das</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://example.com/tags/index/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://dedas111.github.io/tags/index/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Home</title>
-      <link>https://example.com/home/</link>
+      <link>https://dedas111.github.io/home/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/home/</guid>
+      <guid>https://dedas111.github.io/home/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Posts</title>
-      <link>https://example.com/post/</link>
+      <link>https://dedas111.github.io/post/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/</guid>
+      <guid>https://dedas111.github.io/post/</guid>
       <description></description>
     </item>
     
