@@ -139,8 +139,26 @@
                 
             </div>
 
-            <p>The major research projects that I worked on are described below.</p>
-<h2 id="1-anonymity-trilemma">1. Anonymity Trilemma</h2>
+            <p>The major research projects that I worked/have been working on are described below.</p>
+
+<h2 id="2-building-efficient-anonymous-communication-protocols">Building Efficient Anonymous Communication Protocols</h2>
+<p>Over the last several years I have worked on multiple protocols. I briefly describe the selected ones below:</p>
+<h4 id="cmix-mixing-with-minimal-real-time-asymmetric-cryptographic-operations">cMix: Mixing with Minimal Real-Time Asymmetric Cryptographic Operations</h4>
+<p>This protocol eliminates the expensive real-time public key operations by introducing a precomputation phase.
+I worked on designing, prototype implementation and security analysis of the protocol.
+You can read more about the protocol <a href="https://eprint.iacr.org/2016/008">here</a>.</p>
+<h4 id="protocol-x">Streams</h4>
+<p>Currently we are working on building a protocol that we have not named yet. The protocol aims to provide the following properties:</p>
+<ol>
+<li>strong sender/relationship anonymity is achieved,</li>
+<li>the combined latency and bandwidth overhead is as close as possible to the necessary bounds indicated by the trilemma work,</li>
+<li>the trade-off between latency and bandwidth overhead can be chosen depending on the application scenario.</li>
+</ol>
+<p>The protocol is still under construction.</p>
+
+<hr>
+
+<h2 id="1-anonymity-trilemma">Anonymity Trilemma</h2>
 <p>Many anonymous communication (AC) protocols have been proposed with the aim of improving users' privacy over the Internet. 
 Several of them were able to provide strong anonymity guarantees (cryptographic indistinguishability-based anonymity), however at the cost of having a high latency overhead or high bandwidth overhead. 
 More specifically, AC protocols like the dining cryptographers (DC) network provide anonymity even in the presence of global adversaries (that can observe all network traffic) at the expense of bandwidth overhead, while protocols based on mix-net designs improve anonymity at the expense of higher latency.
@@ -153,21 +171,6 @@ However, it is not clear how to balance such system parameters to ensure strong 
 <p>The papers related to this projects are available below &mdash;<br>
 <a href="https://ieeexplore.ieee.org/abstract/document/8418599">trilemma</a> ,
 <a href="https://petsymposium.org/2020/files/papers/issue3/popets-2020-0056.pdf">comprehensive-trilemma</a></p>
-<hr>
-<h2 id="2-building-efficient-anonymous-communication-protocols">2. Building Efficient Anonymous Communication Protocols</h2>
-<p>Over the last five years of my Ph.D. I have worked on multiple protocols. I briefly describe the selected ones below:</p>
-<h4 id="cmix-mixing-with-minimal-real-time-asymmetric-cryptographic-operations">cMix: Mixing with Minimal Real-Time Asymmetric Cryptographic Operations</h4>
-<p>This protocol eliminates the expensive real-time public key operations by introducing a precomputation phase.
-I worked on designing, prototype implementation and security analysis of the protocol.
-You can read more about the protocol <a href="https://eprint.iacr.org/2016/008">here</a>.</p>
-<h4 id="protocol-x">Protocol X</h4>
-<p>Currently we are working on building a protocol that we have not named yet. The protocol aims to provide the following properties:</p>
-<ol>
-<li>strong sender/relationship anonymity is achieved,</li>
-<li>the combined latency and bandwidth overhead is as close as possible to the necessary bounds indicated by the trilemma work,</li>
-<li>the trade-off between latency and bandwidth overhead can be chosen depending on the application scenario.</li>
-</ol>
-<p>The protocol is still under construction.</p>
 </div>
         <div class="post-footer">
             <div class="info">
