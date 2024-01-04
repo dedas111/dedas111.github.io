@@ -141,7 +141,6 @@
 
 
 <h1>Active Projects</h1>
-<hr>
 
 <h2 id="formalizing-censorship">Formal framework to analyze censorship circumvent systems</h2>
 <p>
@@ -156,24 +155,23 @@ The insights from this work could be useful in the context of network firewalls 
 </p>
 
 <h2 id="anonymous-router">Anonymous Router: anonymous communication without any trusted component in the infrastructure</h2>
-
+<p>
 Anonymous communication systems typically require some trusted entity in the infrastructure to achieve their privacy guarantees, e.g., mixnets require at least one honest mixnode on the path of a message, MPC based protocols require at least one honest server. Few recent protocols (e.g., Pung, Addra) could escape that requirement, however, with additional assumptions/restrictions. 
 Pung and Addra use private information retrieval as their building block and can scale for several thousand users. However, they require the users to agree beforehand who talks to whom, and can only provide relationship anonymity: it is not suitable for stronger notions like sender anonymity, and cannot support an application that requires anonymous broadcast. It is not yet known if such protocols can be designed without the additional setup requirement among users and with that scalability for a large number of users.
 We aim to solve the above problem by designing a protocol that can achieve sender anonymity in the anonymous broadcast scenario without involving any trusted entity in the infrastructure. Our system has three sets of parties: (i) a set of N senders/uploaders that want to send files, (ii) a set of M recipients/downloaders that want to receive/download files, and (iii) a computationally powerful server that is untrusted for privacy but trusted for availability, e.g., Amazon cloud services.
-
+</p>
 
 <h2 id="continuous-mixnets">Analyzing the security and efficiency of continuous stop-and-go mixnets</h2>
-
+<p>
 Continuous stop-and-go mixnets allow interesting tradeoffs in designing anonymous communication systems --- unlike other mixnet-based AC protocols, they do not require a round-based communication model, easily support different types of traffic of different latency requirements, and still provides significantly better anonymity than Tor.
 Nym Technologies has already deployed such mixnets to support real world applications like Telegram and Bitcoin transactions.
 Even though such designs are around for last two decades, it was not known if they can provide provable security guarantees --- all existing analyses
 provided experimental evaluations for specific settings and parameter choices in terms of number of users, topology, choice of delays etc.
 Such evaluations cannot provide a comprehensive understanding about how the anonymity guarantees will vary with the variation of those parameters and settings.
-This work attempts to solve that open problem by providing a formal analysis of the anonymity guarantees provided by such continuous mixnets.
-Additionally we try quantify the anonymity guarantees when the same (continuous) mixnet infrastructure is used to send multiple different kind of traffic corresponding to different applications (with different latency requirements)
+This work attempts to solve that open problem by providing a formal analysis of the anonymity guarantees provided by such continuous mixnets.</p>
+<p>Additionally we try quantify the anonymity guarantees when the same (continuous) mixnet infrastructure is used to send multiple different kind of traffic corresponding to different applications (with different latency requirements).</p>
 <p>Some results of this work has been recently accepted for PETS 2024.</p>
 
-<hr>
 
 <h2 id="3-privacy-preserving-storage-computation-outsourcing">Privacy Preserving Storage And Computation Outsourcing</h2>
 
@@ -190,8 +188,8 @@ while using the computation resources of that server. The work has been publishe
 <p>We are also working on a non-interactive Oblivious-RAM protocol in a client-server model, where the client can utilize the server for most of the computations. We achieve that using homomorphic encryption and batching techniques.
 The work is currently under submission.</p>
 
-<h1>Past Projects</h1>
 <hr>
+<h1>Past Projects</h1>
 
 <h2 id="1-anonymity-trilemma">Anonymity Trilemma</h2>
 <p>Many anonymous communication (AC) protocols have been proposed with the aim of improving users' privacy over the Internet. 
@@ -207,7 +205,6 @@ However, it is not clear how to balance such system parameters to ensure strong 
 <a href="https://ieeexplore.ieee.org/abstract/document/8418599">trilemma</a> ,
 <a href="https://petsymposium.org/2020/files/papers/issue3/popets-2020-0056.pdf">comprehensive-trilemma</a></p>
             
-<hr>
 
 <h2 id="2-building-efficient-anonymous-communication-protocols">Building Efficient And Scalable Anonymous Communication Protocols</h2>
 <p>Over the last several years I have worked on multiple protocols. I briefly describe the selected ones below:</p>
@@ -225,7 +222,6 @@ OrgAn achieves low latency by eliminating the overheads of key agreement and slo
 <p>Currently I am working on building a protocol that can provide provable mixing guarantees while scling for millions of users and keeping the end-to-end latency for each message within several seconds. We use a new scaling technique in this protocol that splits the responsibilities of expensive public key operations and mixing into separate servers, and efficiently achieves mixing for millions of messages while tolerating a constant fraction of compromised servers in the system.</p>
 <p>This work has been published in CSF 2024. You can read more about the protocol <a href="https://eprint.iacr.org/2021/1685">here</a>. </p>
 
-<hr>
 
 <h2 id="2-poet-concensus">Analyzing Proof-of-Elapsed-Times Concensus Protocols</h2>
 <p>Proof-of-elapsed-time or PoET utilizes a random wait-time generated by a Trusted Execution Environment (TEE) instead of using proof of work.
